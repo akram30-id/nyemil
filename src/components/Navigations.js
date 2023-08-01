@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './../assets/logo.png';
-import Dropdown from 'react-bootstrap/Dropdown';
+import Button from 'react-bootstrap/Button';
 
 const Navigations = () => {
     return (
@@ -46,17 +46,8 @@ const Navigations = () => {
                         </NavDropdown>
                     </Nav>
                     <div className="d-flex align-items-center">
-                        <Dropdown style={{marginLeft: '8px'}}>
-                            <Dropdown.Toggle variant="white" className='rounded-pill' id="dropdown-basic">
-                                <i className="bi bi-person-circle" style={{fontSize: '1.2em'}}></i>
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
+                        <Button variant="primary" className='btn-sm rounded-pill' style={{marginRight: '12px'}}>Login</Button>
+                        <Button variant="outline-secondary" className='btn-sm rounded-pill'>Daftar Akun</Button>
                     </div>
                 </Navbar.Collapse>
             </Container>
